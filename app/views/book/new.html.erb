@@ -1,0 +1,59 @@
+<div class="book-container">
+
+    <div class="publisher-new">
+        <a href="/publisher/new">出版社登録はこちら</a>
+    </div>
+
+    <div class="genre-new">
+        <a href="/genre/new">ジャンル登録はこちら</a>
+    </div>
+
+    <div class="book-new">
+        <p>書籍タイトル</p>
+            <input type="text" class="book-title" name="title" value="">
+
+        <p>書籍画像</p>
+            <input type="file" class="book-image" name="image" value="">
+
+        <p>出版社</p>
+            <%=collection_select(:publisher_id, :id, Publisher.all, :id, :name, include_blank: true) %><br>
+
+        <p>ジャンル１</p>
+            <%=collection_select(:genre_id, :genre1_id, Genre.all, :id, :name, include_blank: true) %><br>
+
+        <p>ジャンル２</p>
+            <%=collection_select(:genre_id, :genre2_id, Genre.all, :id, :name, include_blank: true) %><br>
+
+        <p>ジャンル３</p>
+            <%=collection_select(:genre_id, :genre3_id, Genre.all, :id, :name, include_blank: true) %><br>
+
+        <p>感想</p>
+           <textarea cols="40" rows="8" class="book-impression" name="impression"></textarea>
+
+        <p>評価</p>
+            <div class="book-rate"><div>
+            
+        <p>書籍要約</p>
+            <input type="button" id="addRow" value="行追加">
+        <div class="summary-table">
+           <table id="summary-table"> 
+                <tr>
+                    <th id="section">セクション</th>
+                    <th id="summary">要約文章</th>
+                    <th id="delete"></th>
+                </tr>
+                <tr>
+                    <th><input type="text" class="section" name="section" value=""></th>
+                    <th><input type="text" class="summary" name="summary" value=""></th>
+                    <th></th>  
+                </tr>
+           </table>
+
+
+        </div>
+
+    </div>
+
+
+
+</div>

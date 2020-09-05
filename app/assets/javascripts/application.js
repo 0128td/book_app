@@ -13,4 +13,34 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery
+//= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+
+    $("#addRow").click(function() {
+        var html = "<tr><th><input type="
+        text " class="
+        section " name="
+        section " value="
+        "></th><th><input type="
+        text " class="
+        summary " name="
+        summary " value="
+        "></th><th><input type="
+        button " id="
+        delRow " value="
+        削除 "></th></tr>";
+
+        $(table).append(html);
+
+    });
+
+    $('#delRow').click(function() {
+        var row = $(this).closest("tr").remove();
+        $(row).remove();
+
+    });
+
+});
