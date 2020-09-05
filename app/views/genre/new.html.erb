@@ -1,0 +1,17 @@
+<div class="book-container">
+    <div class="book-new">
+        <a href="/book/new">書籍登録に戻る</a>
+    </div>
+
+<div class="book-new">
+        <%=form_with url:"/genre/create" do |form| %>
+
+        <p>ジャンル登録</p>
+            <input type="text" class="genre-title" name="name" value="">
+            <br>
+            <input type="submit" value="登録">
+            
+        <%end%>
+
+
+</div>

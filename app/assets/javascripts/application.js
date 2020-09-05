@@ -19,27 +19,15 @@
 
 $(document).ready(function() {
 
-    $("#addRow").click(function() {
-        var html = "<tr><th><input type="
-        text " class="
-        section " name="
-        section " value="
-        "></th><th><input type="
-        text " class="
-        summary " name="
-        summary " value="
-        "></th><th><input type="
-        button " id="
-        delRow " value="
-        削除 "></th></tr>";
-
-        $(table).append(html);
+    $(document).on("click", "#addRow", function() {
+        let html = '<tr><td><input type="text" class="section" value=""></td><td><input type="text" class="summary" value=""></td><td><input type="button" class="delRow" value="削除"></td></tr>'
+        $('#summary-table').append(html);
 
     });
 
-    $('#delRow').click(function() {
-        var row = $(this).closest("tr").remove();
-        $(row).remove();
+    $(document).on("click", ".delRow", function() {
+        console.log(1);
+        $(this).parents('tr').remove();
 
     });
 

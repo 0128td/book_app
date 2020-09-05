@@ -1,6 +1,9 @@
 // Place all the styles related to the book controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*TOP画面*/
+
 .top-container {
     width: 100%;
     display: flex;
@@ -19,8 +22,15 @@ aside {
     background-color: whitesmoke;
 }
 
+
+/*TOP画面終わり*/
+
+
+/*登録画面共通*/
+
 .book-container {
     width: 100%;
+    height: 100vh;
     text-align: center;
 }
 
@@ -47,6 +57,14 @@ aside {
 .book-image {
     width: 300px;
     margin-bottom: 2%;
+    background-color: white;
+    border: inset 1px;
+}
+
+.book-author {
+    width: 300px;
+    margin-bottom: 2%;
+    padding: 5px;
     background-color: white;
     border: inset 1px;
 }
@@ -84,12 +102,12 @@ aside {
 }
 
 .section {
-    width: 90%;
+    width: 80%;
     background-color: white;
 }
 
 #summary {
-    width: 80%;
+    width: 400px;
 }
 
 .summary {
@@ -98,5 +116,24 @@ aside {
 }
 
 #delete {
-    width: 10%;
+    width: 50px;
 }
+
+.genre-title {
+    width: 300px;
+    margin-bottom: 2%;
+    padding: 5px;
+    background-color: white;
+    border: inset 1px;
+}
+
+.publisher-title {
+    width: 300px;
+    margin-bottom: 2%;
+    padding: 5px;
+    background-color: white;
+    border: inset 1px;
+}
+
+
+/*登録画面共通終わり*/

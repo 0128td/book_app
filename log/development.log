@@ -1305,3 +1305,1093 @@ Processing by BookController#new as HTML
 Completed 200 OK in 157ms (Views: 153.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/top" for ::1 at 2020-09-05 17:07:53 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  Rendered book/top.html.erb within layouts/application (6.9ms)
+Started GET "/top" for ::1 at 2020-09-05 17:07:55 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  Rendered book/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1943ms (Views: 1932.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 223ms (Views: 215.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:08:00 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:19
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:22
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:25
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:28
+  Rendered book/new.html.erb within layouts/application (59.6ms)
+Completed 200 OK in 131ms (Views: 106.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:09:45 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:22
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:25
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:28
+  Rendered book/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 184ms (Views: 158.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:11:17 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:22
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:25
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:28
+  Rendered book/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 278ms (Views: 273.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:12:58 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:19
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:22
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:25
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:28
+  Rendered book/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 152ms (Views: 148.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:14:17 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:22
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:25
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:28
+  Rendered book/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 162ms (Views: 157.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:14:36 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:22
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:25
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:28
+  Rendered book/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:19:13 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 269ms (Views: 246.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:19:22 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 167ms (Views: 162.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:19:31 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 184ms (Views: 180.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:19:43 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 154ms (Views: 150.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:20:52 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 64ms (Views: 57.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:47:42 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 151ms (Views: 146.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/top" for ::1 at 2020-09-05 17:49:11 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  Rendered book/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 61ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for ::1 at 2020-09-05 17:49:14 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  Rendered book/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 17:49:21 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 60ms (Views: 56.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-05 17:49:33 +0900
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for BookController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/book/new" for ::1 at 2020-09-05 18:03:02 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 203ms (Views: 196.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:03:04 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:03:40 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:03:42 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:03:44 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:04:01 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 88ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 18:04:11 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:04:28 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 18:04:29 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 69ms (Views: 65.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/genre/new" for ::1 at 2020-09-05 18:04:30 +0900
+Processing by GenreController#new as HTML
+  Rendering genre/new.html.erb within layouts/application
+  Rendered genre/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 55ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/genre/create" for ::1 at 2020-09-05 18:04:39 +0900
+Processing by GenreController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qN2fGJ+BTY2xIkLyQjS21mi88ShCPTKXgIw+YtFSAes/b3wi0YSLg13tvoIiuEIdvYUAYtiwqsa5bsDqXlbVIQ==", "name"=>"自己啓発"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/genre_controller.rb:10
+  [1m[36mGenre Create (1.6ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "自己啓発"], ["created_at", "2020-09-05 09:04:39.380499"], ["updated_at", "2020-09-05 09:04:39.380499"]]
+  ↳ app/controllers/genre_controller.rb:10
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/genre_controller.rb:10
+Redirected to http://localhost:3000/book/new
+Completed 200 OK in 27ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 18:04:39 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 67ms (Views: 62.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:05:57 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/publisher/create" for ::1 at 2020-09-05 18:06:05 +0900
+Processing by PublisherController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1M7zyggoYNWyxwIdAmPdhCH3gTDyt0xGw34dJa9/oLRj03z5d3Zm6JuurJBbDwKjG+ZtosgikUGTF3p6hUwKiA==", "name"=>"カンキ出版"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/publisher_controller.rb:9
+  [1m[36mPublisher Create (1.1ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "カンキ出版"], ["created_at", "2020-09-05 09:06:05.365789"], ["updated_at", "2020-09-05 09:06:05.365789"]]
+  ↳ app/controllers/publisher_controller.rb:9
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/publisher_controller.rb:9
+Redirected to http://localhost:3000/book/new
+Completed 200 OK in 26ms (ActiveRecord: 13.4ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 18:06:05 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:06:35 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:07:01 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 220ms (Views: 215.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 18:07:26 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 169ms (Views: 166.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-05 19:13:52 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 147ms (Views: 143.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:13:59 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 62ms (Views: 58.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:18:01 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (1.0ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 162ms (Views: 157.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:19:00 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 156ms (Views: 150.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:19:11 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 63ms (Views: 59.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:19:36 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 161ms (Views: 157.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:20:03 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 167ms (Views: 162.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:23:08 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 175ms (Views: 153.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:23:36 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 190ms (Views: 185.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:24:58 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 182ms (Views: 178.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:25:06 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 93ms (Views: 88.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:25:19 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 156ms (Views: 151.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:25:58 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 172ms (Views: 168.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:26:22 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 187ms (Views: 180.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:26:45 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 205ms (Views: 200.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:27:20 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 163ms (Views: 158.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:28:47 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 173ms (Views: 168.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:29:13 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 178ms (Views: 172.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:30:05 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 164ms (Views: 158.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:32:03 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 130ms (Views: 95.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:40:57 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 205ms (Views: 200.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:41:57 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 158ms (Views: 154.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:45:10 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 162ms (Views: 158.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:45:50 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 65ms (Views: 60.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:51:39 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 182ms (Views: 178.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:52:55 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 165ms (Views: 160.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:53:33 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 154ms (Views: 150.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 19:53:53 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 65ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 20:41:30 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 114ms (Views: 87.3ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-05 20:41:57 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PQLmmCRR0ITIXkRwuavN2wJNXYxDTk0pLeH/eq0IOCAoDc/oVHmtKyCx7xYZ1fsG+KLznIG/BSCPgX/+Lt0vkw==", "title"=>"テスト", "image"=>"", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"あれがよかった", "section"=>"", "summary"=>""}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/book_controller.rb:15:in `create'
+Started POST "/book/create" for ::1 at 2020-09-05 20:41:59 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PQLmmCRR0ITIXkRwuavN2wJNXYxDTk0pLeH/eq0IOCAoDc/oVHmtKyCx7xYZ1fsG+KLznIG/BSCPgX/+Lt0vkw==", "title"=>"テスト", "image"=>"", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"あれがよかった", "section"=>"", "summary"=>""}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/book_controller.rb:15:in `create'
+Started POST "/book/create" for ::1 at 2020-09-05 20:42:14 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PQLmmCRR0ITIXkRwuavN2wJNXYxDTk0pLeH/eq0IOCAoDc/oVHmtKyCx7xYZ1fsG+KLznIG/BSCPgX/+Lt0vkw==", "title"=>"テスト", "image"=>"", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"あれがよかった", "section"=>"", "summary"=>""}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/book_controller.rb:15:in `create'
+Started GET "/book/new" for ::1 at 2020-09-05 20:42:21 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  Rendered book/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 58ms (Views: 55.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-05 20:42:47 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"odXhRU4aJ7toCmxtSiuJ2kRu3hrYfn4hRpa0CiLv65G02sg1PjJaFIDlxwvqVb8HvoFwChqPNijk9jSOoTr8Ig==", "title"=>"てすと", "image"=>"", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"ｔｅｓｔ", "section"=>"", "summary"=>""}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/book_controller.rb:15:in `create'
+Started GET "/book/new" for ::1 at 2020-09-05 20:54:34 +0900
+  
+SyntaxError (C:/Users/user/book_app/app/controllers/book_controller.rb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+...                   publisher_id:@publisher,
+...                   ^~~~~~~~~~~~
+C:/Users/user/book_app/app/controllers/book_controller.rb:29: syntax error, unexpected ')', expecting end
+...        impression:@impression)
+...                              ^):
+  
+app/controllers/book_controller.rb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/book_controller.rb:29: syntax error, unexpected ')', expecting end
+Started GET "/book/new" for ::1 at 2020-09-05 20:55:02 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 470ms (Views: 444.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-05 20:55:32 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.7ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 221ms (Views: 214.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-05 20:56:03 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HAA77WgRaFunWPw/eqtyt1SqEIJwAyrDSuQNWC0Jp8EJDxKdGDkV9E+3V1na1URqrkW+krLyYsrohI3crtywcg==", "title"=>"TEST", "image"=>"", "author"=>"ひじい", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"ＴＥＳＴ"}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'impression' for Book.):
+  
+app/controllers/book_controller.rb:22:in `create'
+Started POST "/book/create" for ::1 at 2020-09-05 20:56:06 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HAA77WgRaFunWPw/eqtyt1SqEIJwAyrDSuQNWC0Jp8EJDxKdGDkV9E+3V1na1URqrkW+krLyYsrohI3crtywcg==", "title"=>"TEST", "image"=>"", "author"=>"ひじい", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"ＴＥＳＴ"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'impression' for Book.):
+  
+app/controllers/book_controller.rb:22:in `create'
+Started GET "/book/new" for ::1 at 2020-09-05 20:57:34 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 124ms (Views: 115.9ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-05 20:57:50 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVdo4zf9hvMPHIxQmu3RkSOn5n5jJve22fbr/I35WnFMWEGTR9X7XOfzJzY6k+dM2UhIbqHXv797lmt4DixNwg==", "title"=>"あああ", "image"=>"", "author"=>"あああ", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"ああああ"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+  [1m[36mBook Create (1.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "publisher_id", "genre1_id", "Impression", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "あああ"], ["image", ""], ["author", "あああ"], ["publisher_id", 1], ["genre1_id", 1], ["Impression", "ああああ"], ["created_at", "2020-09-05 11:57:50.952404"], ["updated_at", "2020-09-05 11:57:50.952404"]]
+  ↳ app/controllers/book_controller.rb:22
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+No template found for BookController#create, rendering head :no_content
+Completed 204 No Content in 186ms (ActiveRecord: 16.0ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-05 21:00:58 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVdo4zf9hvMPHIxQmu3RkSOn5n5jJve22fbr/I35WnFMWEGTR9X7XOfzJzY6k+dM2UhIbqHXv797lmt4DixNwg==", "title"=>"あああ", "image"=>"C:\\fakepath\\test.png", "author"=>"あああ", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"ああああ"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+  [1m[36mBook Create (1.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "publisher_id", "genre1_id", "Impression", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "あああ"], ["image", "C:\\fakepath\\test.png"], ["author", "あああ"], ["publisher_id", 1], ["genre1_id", 1], ["Impression", "ああああ"], ["created_at", "2020-09-05 12:00:59.016854"], ["updated_at", "2020-09-05 12:00:59.016854"]]
+  ↳ app/controllers/book_controller.rb:22
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+No template found for BookController#create, rendering head :no_content
+Completed 204 No Content in 155ms (ActiveRecord: 10.2ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-05 21:01:00 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVdo4zf9hvMPHIxQmu3RkSOn5n5jJve22fbr/I35WnFMWEGTR9X7XOfzJzY6k+dM2UhIbqHXv797lmt4DixNwg==", "title"=>"あああ", "image"=>"C:\\fakepath\\test.png", "author"=>"あああ", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"ああああ"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+  [1m[36mBook Create (1.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "publisher_id", "genre1_id", "Impression", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "あああ"], ["image", "C:\\fakepath\\test.png"], ["author", "あああ"], ["publisher_id", 1], ["genre1_id", 1], ["Impression", "ああああ"], ["created_at", "2020-09-05 12:01:00.375862"], ["updated_at", "2020-09-05 12:01:00.375862"]]
+  ↳ app/controllers/book_controller.rb:22
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+No template found for BookController#create, rendering head :no_content
+Completed 204 No Content in 195ms (ActiveRecord: 10.9ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-05 21:02:37 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVdo4zf9hvMPHIxQmu3RkSOn5n5jJve22fbr/I35WnFMWEGTR9X7XOfzJzY6k+dM2UhIbqHXv797lmt4DixNwg==", "title"=>"あああ", "image"=>"C:\\fakepath\\test.png", "author"=>"あああ", "publisher_id"=>{"id"=>"1"}, "genre_id"=>{"genre1_id"=>"1", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"ああああ"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+  [1m[36mBook Create (1.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "publisher_id", "genre1_id", "Impression", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "あああ"], ["image", "C:\\fakepath\\test.png"], ["author", "あああ"], ["publisher_id", 1], ["genre1_id", 1], ["Impression", "ああああ"], ["created_at", "2020-09-05 12:02:37.336241"], ["updated_at", "2020-09-05 12:02:37.336241"]]
+  ↳ app/controllers/book_controller.rb:22
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+Redirected to http://localhost:3000/top
+Completed 200 OK in 42ms (ActiveRecord: 12.7ms)
+
+
+Started GET "/top" for ::1 at 2020-09-05 21:02:37 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  Rendered book/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 81ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (2.8ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 1]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (1.8ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 2]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (3.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 3]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (2.0ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 4]]
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
