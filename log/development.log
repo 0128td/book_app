@@ -2623,3 +2623,2029 @@ Migrating to RenameImpressionColumnToBooks (20200906010515)
   ↳ bin/rails:4
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:4
+Started GET "/book/new" for ::1 at 2020-09-06 10:07:33 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (1.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 117ms (Views: 106.6ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:07:40 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 107ms (Views: 91.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:07:58 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 60ms (Views: 53.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:09:30 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 81ms (Views: 76.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 10:09:37 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 89ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:09:49 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 97ms (Views: 90.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:10:31 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:14:47 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 84ms (Views: 77.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:18:30 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.7ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 92ms (Views: 60.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:19:00 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 330ms (Views: 323.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:19:09 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 219ms (Views: 212.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/book/5/update" for ::1 at 2020-09-06 10:21:15 +0900
+Processing by BookController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yeZb6WvKvJxszsWOtVA6s+v6VtnGUDtaYHJw7ETu/frc6XKZG+LBM4QhbugVLgxuERX4yQShc1PCEvBoxzvqSQ==", "title"=>"論理トレーニング101題", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"大変だったです。", "id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[36mBook Update (1.1ms)[0m  [1m[33mUPDATE "books" SET "impression" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["impression", "大変だったです。"], ["updated_at", "2020-09-06 01:21:15.130376"], ["id", 5]]
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+Redirected to http://localhost:3000/top
+Completed 200 OK in 62ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:21:15 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 84ms (Views: 76.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 10:23:09 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-06 10:24:53 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RXaYnd11nojHOx8Cr3FOZtxWIR5yNKTtt3T4xOV0cUk0hPhxjJbe2p+JgfmJZOhWQUQ5VpmXT4WYvkwWFQgNHA==", "title"=>"新版論理トレーニング", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"簡単になっていた。"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:23
+  [1m[36mBook Create (0.9ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "publisher_id", "genre1_id", "impression", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "新版論理トレーニング"], ["image", ""], ["author", "野矢茂樹"], ["publisher_id", 2], ["genre1_id", 2], ["impression", "簡単になっていた。"], ["created_at", "2020-09-06 01:24:53.939011"], ["updated_at", "2020-09-06 01:24:53.939011"]]
+  ↳ app/controllers/book_controller.rb:23
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:23
+Redirected to http://localhost:3000/top
+Completed 200 OK in 20ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:24:53 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 194ms (Views: 189.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:24:54 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 79ms (Views: 74.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:26:42 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.6ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 70ms (Views: 63.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:33:44 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.6ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 267ms (Views: 259.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:34:27 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 98ms (Views: 92.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:34:43 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 101ms (Views: 94.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:37:08 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 136ms (Views: 130.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:37:10 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 111ms (Views: 106.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:37:14 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 81ms (Views: 76.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:37:15 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.1ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 107ms (Views: 100.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:37:19 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 82ms (Views: 73.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/genre/new" for ::1 at 2020-09-06 10:37:24 +0900
+Processing by GenreController#new as HTML
+  Rendering genre/new.html.erb within layouts/application
+  Rendered genre/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 88ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 10:37:26 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 85ms (Views: 80.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:37:29 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 109ms (Views: 101.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:37:48 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 145ms (Views: 128.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-06 10:37:51 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 80ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 10:37:53 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 78ms (Views: 74.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:37:54 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 111ms (Views: 104.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:37:57 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 92ms (Views: 84.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:38:39 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (4.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 112ms (Views: 96.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:38:42 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:33
+  Rendered book/edit.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 95ms (Views: 88.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:39:00 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (2.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 116ms (Views: 107.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 10:39:02 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:28
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:37
+  Rendered book/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 122ms (Views: 114.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:39:20 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 98ms (Views: 92.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:39:21 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 114ms (Views: 79.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:39:42 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 138ms (Views: 91.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:39:44 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 126ms (Views: 117.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:43:26 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.9ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 117ms (Views: 107.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:43:27 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 104ms (Views: 97.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:43:28 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (1.7ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 108ms (Views: 100.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:44:12 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 111ms (Views: 103.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:44:12 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.6ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 138ms (Views: 131.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:44:14 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 119ms (Views: 82.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 10:44:16 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 85ms (Views: 79.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:44:17 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 136ms (Views: 127.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:44:21 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 95ms (Views: 90.5ms | ActiveRecord: 1.6ms)
+
+
+  [1m[36mBook Load (5.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:45:57 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 166ms (Views: 130.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:45:57 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.7ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 132ms (Views: 124.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:45:59 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 98ms (Views: 92.4ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:47:43 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 128ms (Views: 112.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:47:44 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.1ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 208ms (Views: 173.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:51:01 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 124ms (Views: 90.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:51:16 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.9ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 136ms (Views: 100.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 10:54:50 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:28
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:37
+  Rendered book/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 79ms (Views: 75.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:54:55 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (85.8ms)
+Completed 200 OK in 249ms (Views: 242.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:54:58 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 74ms (Views: 67.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/book/5/update" for ::1 at 2020-09-06 10:55:16 +0900
+Processing by BookController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6u33XnumIAVki1kDQQr0bvAPJoWRDY7pve8gVy4Ifmn10Mqs+xlS/OydpDz0bLt8Oe57azJtOEelWDpa+FqP/g==", "title"=>"論理トレーニング101題", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"大変だったです。よろしく。", "id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[36mBook Update (1.3ms)[0m  [1m[33mUPDATE "books" SET "impression" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["impression", "大変だったです。よろしく。"], ["updated_at", "2020-09-06 01:55:16.043787"], ["id", 5]]
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[36mBook Update (0.9ms)[0m  [1m[33mUPDATE "books" SET "title" = ?, "impression" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["title", "論理トレーニング101題"], ["impression", "大変だったです。よろしく。"], ["updated_at", "2020-09-06 01:55:16.069182"], ["id", 6]]
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+Redirected to http://localhost:3000/top
+Completed 200 OK in 52ms (ActiveRecord: 29.9ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:55:16 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 122ms (Views: 114.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:56:38 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 308ms (Views: 298.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:56:38 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.6ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 116ms (Views: 110.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/book/5/update" for ::1 at 2020-09-06 10:56:42 +0900
+Processing by BookController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NjupwIluq57Eys49rbcR34OhDoQ5hkr+b+bUONYBskkjNICw+UbWMSwlZVsNyScCeU6glPt3AvfNhlS8VdSl+g==", "title"=>"論理トレーニング101題", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"大変だったです。よろしく。", "id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+Redirected to http://localhost:3000/top
+Completed 200 OK in 16ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:56:42 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.6ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 118ms (Views: 112.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:58:14 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 234ms (Views: 226.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:58:14 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 101ms (Views: 89.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/book/5/update" for ::1 at 2020-09-06 10:58:17 +0900
+Processing by BookController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g0U5yxjhzbP5k5FHdQGSh73dh6Pd6LCn0Sc+k5DXQCWWShC7aMmwHBF8OiHVf6RaRzIpsx8Z+K5zR74XEwJXlg==", "title"=>"論理トレーニング101題", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"大変だったです。よろしく。", "id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+Redirected to http://localhost:3000/top
+Completed 200 OK in 16ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:58:17 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (2.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 137ms (Views: 123.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:59:24 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 208ms (Views: 196.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:59:24 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (1.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 142ms (Views: 133.3ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/book/5/update" for ::1 at 2020-09-06 10:59:32 +0900
+Processing by BookController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rp8DcaVCo3FRDjt8U5gG+dDDpUXr/vNgndl6BqqBYNBTkCoB1Wre3rnhkBrz5jAkKiwLVSkPu2k/ufqCKVR3Yw==", "title"=>"論理トレーニング101題", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"大変だったです。よろしく。", "id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+Redirected to http://localhost:3000/top
+Completed 200 OK in 12ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:59:32 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.6ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 73ms (Views: 68.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:59:43 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 77ms (Views: 71.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 10:59:52 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 74ms (Views: 67.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/book/5/update" for ::1 at 2020-09-06 11:00:33 +0900
+Processing by BookController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uv17h6ejCm4XrTWdgwYkMDbwZO9/06ZIAdaH/13e9qVNwEZ1Jxx4l5+7yKI2YGsi/xE5AdyzEOYZYZ3yi4wHMg==", "title"=>"論理トレーニング101題", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"大変だったです。よろしく。", "id"=>"5"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+Redirected to http://localhost:3000/top
+Completed 200 OK in 14ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:00:33 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 181ms (Views: 176.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:00:33 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 78ms (Views: 73.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/book/5/edit" for ::1 at 2020-09-06 11:00:43 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 67ms (Views: 61.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/book/5/update" for ::1 at 2020-09-06 11:00:46 +0900
+Processing by BookController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nIxJ2zRXhT2yOVXoF3KEhjxbMlIWPoLI+o4I9wlQFFaDsXQptOj3xDovqNeiFMuU9bpvvLVeNGbiORL63wLlwQ==", "title"=>"論理トレーニング101題", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"大変だったです。よろしく。", "id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+Redirected to http://localhost:3000/top
+Completed 200 OK in 15ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:00:46 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 74ms (Views: 69.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:00:51 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 87ms (Views: 82.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:04:28 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 228ms (Views: 197.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:05:27 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "    width: 200px%": expected expression (e.g. 1px, bold), was ";"):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:   </head>
+  
+app/assets/stylesheets/book.scss:43
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__371619122_115533800'
+Started GET "/top" for ::1 at 2020-09-06 11:05:38 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 321ms (Views: 314.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:06:51 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 227ms (Views: 220.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:08:01 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 110ms (Views: 76.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:08:14 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 119ms (Views: 88.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:08:32 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 121ms (Views: 89.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:09:58 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (1.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 201ms (Views: 195.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:10:26 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 236ms (Views: 231.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:10:33 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 205ms (Views: 199.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:10:51 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 230ms (Views: 221.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:10:57 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.5ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 226ms (Views: 220.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/book/6/edit" for ::1 at 2020-09-06 11:11:17 +0900
+Processing by BookController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:38
+  Rendering book/edit.html.erb within layouts/application
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/edit.html.erb:28
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:31
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:34
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/edit.html.erb:37
+  Rendered book/edit.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 73ms (Views: 67.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/book/6/update" for ::1 at 2020-09-06 11:11:41 +0900
+Processing by BookController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u3t/V6R2miDEtGE5HdzCmhlSjGo3b4qGSSKYaKx4Yt24RB15W2CCJ+0HQLxd4AkypuQGJSKk/rQYQF9fgcdgsA==", "title"=>"新版論理トレーニング", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"簡単になりました。よろしく。", "id"=>"6"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[36mBook Update (1.5ms)[0m  [1m[33mUPDATE "books" SET "title" = ?, "impression" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["title", "新版論理トレーニング"], ["impression", "簡単になりました。よろしく。"], ["updated_at", "2020-09-06 02:11:41.933975"], ["id", 5]]
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+  [1m[36mBook Update (1.3ms)[0m  [1m[33mUPDATE "books" SET "title" = ?, "impression" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["title", "新版論理トレーニング"], ["impression", "簡単になりました。よろしく。"], ["updated_at", "2020-09-06 02:11:41.953234"], ["id", 6]]
+  ↳ app/controllers/book_controller.rb:53
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:53
+Redirected to http://localhost:3000/top
+Completed 200 OK in 42ms (ActiveRecord: 25.5ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 11:11:41 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  [1m[36mCACHE Publisher Load (0.0ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mCACHE Genre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:21
+  Rendered book/top.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 70ms (Views: 64.8ms | ActiveRecord: 1.4ms)
+
+

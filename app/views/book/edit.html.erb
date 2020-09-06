@@ -1,6 +1,10 @@
 <div class="book-container">
 
     <div class="link-menu">
+        <a href="/top">トップページに戻る</a>
+    </div>
+
+    <div class="link-menu">
         <a href="/publisher/new">出版社登録はこちら</a>
     </div>
 
@@ -21,16 +25,16 @@
             <input type="text" class="book-author" name="author" value="<%=@book.author%>">
 
         <p>出版社</p>
-            <%=collection_select(:publisher_id, :id, Publisher.all, :id, :name, include_blank: true) %><br>
+            <%=collection_select(:publisher_id, :id, Publisher.all, :id, :name, include_blank: true, selected: @book.publisher_id) %><br>
 
         <p>ジャンル１</p>
-            <%=collection_select(:genre_id, :genre1_id, Genre.all, :id, :name, include_blank: true) %><br>
+            <%=collection_select(:genre_id, :genre1_id, Genre.all, :id, :name, include_blank: true, selected: @book.genre1_id) %><br>
 
         <p>ジャンル２</p>
-            <%=collection_select(:genre_id, :genre2_id, Genre.all, :id, :name, include_blank: true) %><br>
+            <%=collection_select(:genre_id, :genre2_id, Genre.all, :id, :name, include_blank: true, selected: @book.genre2_id) %><br>
 
         <p>ジャンル３</p>
-            <%=collection_select(:genre_id, :genre3_id, Genre.all, :id, :name, include_blank: true) %><br>
+            <%=collection_select(:genre_id, :genre3_id, Genre.all, :id, :name, include_blank: true, selected: @book.genre3_id) %><br>
 
         <p>感想</p>
            <textarea cols="40" rows="8" class="book-impression" name="impression"><%=@book.impression%></textarea>

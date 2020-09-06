@@ -4,12 +4,13 @@
 <div class="banner">ここにバナーを入れる</div>
 <div class="book-list">
 
-    <div class="entry">
+   <h2>最近登録した本</h2><br>
 
-    <h2>最近登録した本</h2>
+    <div class="book-infomation">
     
-    <%= @books&.each do |book|%>
+    <% @books&.each do |book|%>
 
+    <div class="book-entry">
     <%=link_to("/book/#{book.id}/edit")do %>    
     <p><%=book.title %></p>
     <p>本画像</p>
@@ -20,6 +21,7 @@
     <span><%=Genre.find_by(id: book.genre3_id) %></span>
     <p><%=book.impression %></p>
     <%end%>
+    </div>
 
     <%end%>
     </div>
