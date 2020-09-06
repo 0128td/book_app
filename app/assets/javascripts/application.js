@@ -19,6 +19,12 @@
 
 $(document).ready(function() {
 
+    $(".flash").fadeIn("slow", function() {
+        $(this).delay(1500).fadeOut("slow");
+
+    });
+
+
     $(document).on("click", "#addRow", function() {
         let html = '<tr><td><input type="text" class="section" value=""></td><td><input type="text" class="summary" value=""></td><td><input type="button" class="delRow" value="削除"></td></tr>'
         $('#summary-table').append(html);

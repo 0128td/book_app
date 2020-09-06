@@ -9,16 +9,16 @@
     </div>
 
     <div class="book-contents">
-        <%=form_with url:"/book/create" do |form| %>
+        <%=form_with url:"/book/#{@book.id}/update" do |form| %>
 
         <p>書籍タイトル</p>
-            <input type="text" class="book-title" name="title" value="">
+            <input type="text" class="book-title" name="title" value="<%=@book.title%>">
 
         <p>書籍画像</p>
             <input type="file" class="book-image" name="image" value="">
 
         <p>著者</p>
-            <input type="text" class="book-author" name="author" value="">
+            <input type="text" class="book-author" name="author" value="<%=@book.author%>">
 
         <p>出版社</p>
             <%=collection_select(:publisher_id, :id, Publisher.all, :id, :name, include_blank: true) %><br>
@@ -33,11 +33,31 @@
             <%=collection_select(:genre_id, :genre3_id, Genre.all, :id, :name, include_blank: true) %><br>
 
         <p>感想</p>
-           <textarea cols="40" rows="8" class="book-impression" name="impression"></textarea>
+           <textarea cols="40" rows="8" class="book-impression" name="impression"><%=@book.impression%></textarea>
 
         <p>評価</p>
             <div class="book-rate"></div>
             
+        <p>書籍要約</p>
+            <input type="button" id="addRow" value="行追加">
+
+        <div class="summary-table">
+           <table id="summary-table"> 
+                <tr>
+                    <th id="section">セクション</th>
+                    <th id="summary">要約文章</th>
+                    <th id="delete"></th>
+                </tr>
+                <tr>
+                    <td><input type="text" class="section" value=""></td>
+                    <td><input type="text" class="summary" value=""></td>
+                    <td></td>  
+                </tr>
+           </table>
+
+
+        </div>
+
             <input type="submit" value="登録">
 
         <%end%>

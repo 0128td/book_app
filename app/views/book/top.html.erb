@@ -5,43 +5,23 @@
 <div class="book-list">
 
     <div class="entry">
+
     <h2>最近登録した本</h2>
-
-    <p>本タイトル</p>
-    <p>本画像</p>
-    <p>著者</p>
-    <p>出版社</p>
-    <span>ジャンル１</span><span>ジャンル２</span><span>ジャンル３</span>
-    <p>本感想</p>
     
-    <p>本タイトル</p>
-    <p>本画像</p>
-    <p>著者</p>
-    <p>出版社</p>
-    <span>ジャンル１</span><span>ジャンル２</span><span>ジャンル３</span>
-    <p>本感想</p>
+    <%= @books&.each do |book|%>
 
-    <p>本タイトル</p>
+    <%=link_to("/book/#{book.id}/edit")do %>    
+    <p><%=book.title %></p>
     <p>本画像</p>
-    <p>著者</p>
-    <p>出版社</p>
-    <span>ジャンル１</span><span>ジャンル２</span><span>ジャンル３</span>
-    <p>本感想</p>
+    <p><%=book.author %></p>
+    <p><%=Publisher.find_by(id: book.publisher_id) %></p>
+    <span><%=Genre.find_by(id: book.genre1_id) %></span>
+    <span><%=Genre.find_by(id: book.genre2_id) %></span>
+    <span><%=Genre.find_by(id: book.genre3_id) %></span>
+    <p><%=book.impression %></p>
+    <%end%>
 
-    <p>本タイトル</p>
-    <p>本画像</p>
-    <p>著者</p>
-    <p>出版社</p>
-    <span>ジャンル１</span><span>ジャンル２</span><span>ジャンル３</span>
-    <p>本感想</p>
-
-    <p>本タイトル</p>
-    <p>本画像</p>
-    <p>著者</p>
-    <p>出版社</p>
-    <span>ジャンル１</span><span>ジャンル２</span><span>ジャンル３</span>
-    <p>本感想</p>
-
+    <%end%>
     </div>
 
     <div class="browse">

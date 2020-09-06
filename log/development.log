@@ -2395,3 +2395,231 @@ Completed 200 OK in 81ms (Views: 76.7ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mBook Destroy (2.0ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 4]]
   [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/top" for ::1 at 2020-09-06 09:53:55 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  Rendered book/top.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8: 
+     9:     <h2>最近登録した本</h2>
+    10:     
+    11:     <%= @books.each do |book|%>
+    12: 
+    13:     <%=link_to("/book/#{book.id}/edit")do %>    
+    14:     <p><%=book.title %></p>
+  
+app/views/book/top.html.erb:11:in `_app_views_book_top_html_erb__225591863_63522040'
+Started GET "/top" for ::1 at 2020-09-06 09:54:16 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  Rendered book/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1432ms (Views: 1407.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 09:54:24 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 142ms (Views: 115.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/publisher/new" for ::1 at 2020-09-06 09:54:59 +0900
+Processing by PublisherController#new as HTML
+  Rendering publisher/new.html.erb within layouts/application
+  Rendered publisher/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 59ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/publisher/create" for ::1 at 2020-09-06 09:55:06 +0900
+Processing by PublisherController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KZegzstrdPMsjsTPHOUpVx2rocFLour4PWkO8RB6zHGeii/9tDVyzgXnakJFifZwJ7pNU3E3N/9tAGmuOklmTQ==", "name"=>"産業図書"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/publisher_controller.rb:9
+  [1m[36mPublisher Create (1.2ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "産業図書"], ["created_at", "2020-09-06 00:55:06.553576"], ["updated_at", "2020-09-06 00:55:06.553576"]]
+  ↳ app/controllers/publisher_controller.rb:9
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/publisher_controller.rb:9
+Redirected to http://localhost:3000/book/new
+Completed 200 OK in 19ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 09:55:06 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/genre/new" for ::1 at 2020-09-06 09:55:56 +0900
+Processing by GenreController#new as HTML
+  Rendering genre/new.html.erb within layouts/application
+  Rendered genre/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/genre/create" for ::1 at 2020-09-06 09:56:33 +0900
+Processing by GenreController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jE282dHtNFCppqz8ffDYGkjtLY/c8YFNEXu9jMsn02sb/1/jn+jyXkVpUIwdfCzRndTcxUZ8GRwomUMERCMHoQ==", "name"=>"参考書"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/genre_controller.rb:10
+  [1m[36mGenre Create (1.0ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "参考書"], ["created_at", "2020-09-06 00:56:33.905104"], ["updated_at", "2020-09-06 00:56:33.905104"]]
+  ↳ app/controllers/genre_controller.rb:10
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/genre_controller.rb:10
+Redirected to http://localhost:3000/book/new
+Completed 200 OK in 21ms (ActiveRecord: 13.4ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 09:56:33 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/book/create" for ::1 at 2020-09-06 09:57:04 +0900
+Processing by BookController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zs9TRumYRXC9pvEi/m7gNiq7cZSSrgCjrRtA/jQMEI2/PTOquHsFIuUUb9nYe0YGt6lp3HkN68uC0fQsxHBs2A==", "title"=>"論理トレーニング101題", "image"=>"", "author"=>"野矢茂樹", "publisher_id"=>{"id"=>"2"}, "genre_id"=>{"genre1_id"=>"2", "genre2_id"=>"", "genre3_id"=>""}, "impression"=>"大変だった"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+  [1m[36mBook Create (1.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "publisher_id", "genre1_id", "Impression", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "論理トレーニング101題"], ["image", ""], ["author", "野矢茂樹"], ["publisher_id", 2], ["genre1_id", 2], ["Impression", "大変だった"], ["created_at", "2020-09-06 00:57:04.220801"], ["updated_at", "2020-09-06 00:57:04.220801"]]
+  ↳ app/controllers/book_controller.rb:22
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_controller.rb:22
+Redirected to http://localhost:3000/top
+Completed 200 OK in 34ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 09:57:04 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  Rendered book/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 53ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 10:03:05 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.2ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 283ms (Views: 278.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/book/new" for ::1 at 2020-09-06 10:03:06 +0900
+Processing by BookController#new as HTML
+  Rendering book/new.html.erb within layouts/application
+  [1m[36mPublisher Load (0.3ms)[0m  [1m[34mSELECT "publishers".* FROM "publishers"[0m
+  ↳ app/views/book/new.html.erb:24
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:27
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:30
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/book/new.html.erb:33
+  Rendered book/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 64ms (Views: 56.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/top" for ::1 at 2020-09-06 10:03:10 +0900
+Processing by BookController#top as HTML
+  Rendering book/top.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "update_at" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/book/top.html.erb:11
+  [1m[36mPublisher Load (0.4ms)[0m  [1m[34mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:17
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:18
+  [1m[36mGenre Load (2.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:19
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/book/top.html.erb:20
+  Rendered book/top.html.erb within layouts/application (46.1ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 5.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `impression' for #<Book:0x000000000dadd768>
+Did you mean?  Impression
+               Impression=
+               Impression?):
+    18:     <span><%=Genre.find_by(id: book.genre1_id) %></span>
+    19:     <span><%=Genre.find_by(id: book.genre2_id) %></span>
+    20:     <span><%=Genre.find_by(id: book.genre3_id) %></span>
+    21:     <p><%=book.impression %></p>
+    22:     <%end%>
+    23: 
+    24:     <%end%>
+  
+app/views/book/top.html.erb:21:in `block (2 levels) in _app_views_book_top_html_erb__225591863_114408620'
+app/views/book/top.html.erb:13:in `block in _app_views_book_top_html_erb__225591863_114408620'
+app/views/book/top.html.erb:11:in `_app_views_book_top_html_erb__225591863_114408620'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to RenameImpressionColumnToBooks (20200906010515)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200906010515_rename_impression_column_to_books.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abooks" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "image" varchar DEFAULT NULL, "author" varchar DEFAULT NULL, "publisher_id" integer DEFAULT NULL, "genre1_id" integer DEFAULT NULL, "genre2_id" integer DEFAULT NULL, "genre3_id" integer DEFAULT NULL, "impression" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200906010515_rename_impression_column_to_books.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "abooks" ("id","title","image","author","publisher_id","genre1_id","genre2_id","genre3_id","impression","created_at","updated_at")
+                     SELECT "id","title","image","author","publisher_id","genre1_id","genre2_id","genre3_id","Impression","created_at","updated_at" FROM "books"[0m
+  ↳ db/migrate/20200906010515_rename_impression_column_to_books.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "books"[0m
+  ↳ db/migrate/20200906010515_rename_impression_column_to_books.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "books" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "image" varchar DEFAULT NULL, "author" varchar DEFAULT NULL, "publisher_id" integer DEFAULT NULL, "genre1_id" integer DEFAULT NULL, "genre2_id" integer DEFAULT NULL, "genre3_id" integer DEFAULT NULL, "impression" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200906010515_rename_impression_column_to_books.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "books" ("id","title","image","author","publisher_id","genre1_id","genre2_id","genre3_id","impression","created_at","updated_at")
+                     SELECT "id","title","image","author","publisher_id","genre1_id","genre2_id","genre3_id","impression","created_at","updated_at" FROM "abooks"[0m
+  ↳ db/migrate/20200906010515_rename_impression_column_to_books.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "abooks"[0m
+  ↳ db/migrate/20200906010515_rename_impression_column_to_books.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200906010515"]]
+  ↳ bin/rails:4
+  [1m[35m (15.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4

@@ -110,6 +110,14 @@ footer {
     margin-top: 100px;
 }
 
+.flash {
+    width: 100%;
+    top: 0;
+    background-color: sandybrown;
+    color: white;
+    font-weight: bold;
+}
+
 .header-logo {
     width: 120px;
     background-image: url("logo.jpg");

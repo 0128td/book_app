@@ -8,7 +8,7 @@ class GenreController < ApplicationController
     def create
         @name = params[:name]
         Genre.create(name:@name)
-        flash[:notice] = "登録しました"
+        flash[:notice] = I18n.t("helpers.submit.create")
         redirect_to("/book/new")
 
     end

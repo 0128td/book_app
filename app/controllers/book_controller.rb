@@ -1,6 +1,7 @@
 class BookController < ApplicationController
 
     def top
+        @books = Book.order(update_at: :desc).limit(5)
 
     end
 
@@ -26,9 +27,16 @@ class BookController < ApplicationController
                     genre1_id:@genre1,
                     genre2_id:@genre2,
                     genre3_id:@genre3,
-                    Impression:@impression)
-        flash[:notice] = "登録しました"
+                    impression:@impression)
+        flash[:notice] = I18n.t("helpers.submit.create")
         redirect_to("/top")
+
+    end
+
+
+    def edit
+        @book = Book.find_by(id: params[:id])
+
 
     end
 
