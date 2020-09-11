@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   post '/book/:id/update' => "book#update"
   post '/book/:id/destroy' => "book#destroy" 
 
+  get '/summary/:id/edit' => "summary#edit"
+  post '/summary/:id/create' => "summary#create" 
+
   get '/genre/new' => "genre#new"
   get '/genre/:id/edit' => "genre#edit" 
   post '/genre/create' => "genre#create"

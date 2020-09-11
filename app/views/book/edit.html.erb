@@ -1,73 +1,53 @@
 <div class="book-container">
-
-    <div class="link-menu">
-        <a href="/top">トップページに戻る</a>
-    </div>
-
-    <div class="link-menu">
-        <a href="/publisher/new">出版社登録はこちら</a>
-    </div>
-
-    <div class="link-menu">
-        <a href="/genre/new">ジャンル登録はこちら</a>
-    </div>
-
-    <div class="book-contents">
-        <%=form_with url:"/book/#{@book.id}/update" do |form| %>
-
-        <p>書籍タイトル</p>
-            <input type="text" class="book-title" name="title" value="<%=@book.title%>">
-
-        <p>書籍画像</p>
-            <input type="file" class="book-image" name="image" value="">
-
-        <p>著者</p>
-            <input type="text" class="book-author" name="author" value="<%=@book.author%>">
-
-        <p>出版社</p>
-            <%=collection_select(:publisher_id, :id, Publisher.all, :id, :name, include_blank: true, selected: @book.publisher_id) %><br>
-
-        <p>ジャンル１</p>
-            <%=collection_select(:genre_id, :genre1_id, Genre.all, :id, :name, include_blank: true, selected: @book.genre1_id) %><br>
-
-        <p>ジャンル２</p>
-            <%=collection_select(:genre_id, :genre2_id, Genre.all, :id, :name, include_blank: true, selected: @book.genre2_id) %><br>
-
-        <p>ジャンル３</p>
-            <%=collection_select(:genre_id, :genre3_id, Genre.all, :id, :name, include_blank: true, selected: @book.genre3_id) %><br>
-
-        <p>感想</p>
-           <textarea cols="40" rows="8" class="book-impression" name="impression"><%=@book.impression%></textarea>
-
-        <p>評価</p>
-            <div class="book-rate"></div>
-            
+  <div class="link-menu">
+    <a href="/top">トップページに戻る</a>
+  </div>
+  <div class="link-menu">
+    <a href="/publisher/new">出版社登録はこちら</a>
+  </div>
+  <div class="link-menu">
+    <a href="/genre/new">ジャンル登録はこちら</a>
+  </div>
+  <div class="link-menu">
+    <%=link_to("要約登録","/summary/#{params[:id]}/edit")%>
+  </div>
+  <div class="book-contents">
+    <%=form_with url:"/book/#{@book.id}/update" do |form| %>
+      <p>書籍タイトル</p>
+      <input type="text" class="book-title" name="title" value="<%=@book.title%>">
+      <p>書籍画像</p>
+      <input type="file" class="book-image" name="image" value="">
+      <p>著者</p>
+      <input type="text" class="book-author" name="author" value="<%=@book.author%>">
+      <p>出版社</p>
+      <%=collection_select(:publisher_id, :id, Publisher.all, :id, :name, include_blank: true, selected: @book.publisher_id) %><br>
+      <p>ジャンル１</p>
+      <%=collection_select(:genre_id, :genre1_id, Genre.all, :id, :name, include_blank: true, selected: @book.genre1_id) %><br>
+      <p>ジャンル２</p>
+      <%=collection_select(:genre_id, :genre2_id, Genre.all, :id, :name, include_blank: true, selected: @book.genre2_id) %><br>
+      <p>ジャンル３</p>
+      <%=collection_select(:genre_id, :genre3_id, Genre.all, :id, :name, include_blank: true, selected: @book.genre3_id) %><br>
+      <p>感想</p>
+      <textarea cols="40" rows="8" class="book-impression" name="impression"><%=@book.impression%></textarea>
+      <p>評価</p>
+      <div class="book-rate"></div>
+      <div class="summary-table">
         <p>書籍要約</p>
-            <input type="button" id="addRow" value="行追加">
-
-        <div class="summary-table">
-           <table id="summary-table"> 
-                <tr>
-                    <th id="section">セクション</th>
-                    <th id="summary">要約文章</th>
-                    <th id="delete"></th>
-                </tr>
-                <tr>
-                    <td><input type="text" class="section" value=""></td>
-                    <td><input type="text" class="summary" value=""></td>
-                    <td></td>  
-                </tr>
-           </table>
-
-
-        </div>
-
-            <input type="submit" value="登録">
-
-        <%end%>
-
-    </div>
-
-
-
+        <table id="summary-table">
+          <tr>
+            <th id="section">セクション</th>
+            <th id="summary">要約文章</th>
+          </tr>
+          <% @summaries = Summary.where(book_id:params[:id])%>
+          <% @summaries.each do |summary|%>
+            <tr>
+              <td><%=summary.section%></td>
+              <td><%=summary.summary%></td>
+            </tr>
+          <%end%>
+        </table>
+      </div>
+      <input type="submit" value="登録">
+    <%end%>
+  </div>
 </div>

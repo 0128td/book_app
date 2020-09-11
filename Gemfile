@@ -33,6 +33,9 @@ gem 'jquery-rails'
 
 gem 'rails-i18n', '~> 5.1' 
 
+gem 'rubocop'
+gem 'rubocop-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

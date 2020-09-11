@@ -1,58 +1,44 @@
 <div class="top-container">
-
-<article>
-<div class="banner">ここにバナーを入れる</div>
-<div class="book-list">
-
-   <h2>最近登録した本</h2><br>
-
-    <div class="book-infomation">
-    
-    <% @books&.each do |book|%>
-
-    <div class="book-entry">
-    <%=link_to("/book/#{book.id}/edit")do %>    
-    <p><%=book.title %></p>
-    <p>本画像</p>
-    <p><%=book.author %></p>
-    <p><%=Publisher.find_by(id: book.publisher_id) %></p>
-    <span><%=Genre.find_by(id: book.genre1_id) %></span>
-    <span><%=Genre.find_by(id: book.genre2_id) %></span>
-    <span><%=Genre.find_by(id: book.genre3_id) %></span>
-    <p><%=book.impression %></p>
-    <%end%>
+  <article>
+    <div class="banner">ここにバナーを入れる</div>
+    <div class="book-list">
+      <h2>最近登録した本</h2>
+      <br>
+      <div class="book-infomation">
+        <% @books&.each do |book|%>
+          <div class="book-entry">
+            <%=link_to("/book/#{book.id}/edit")do %>
+              <p><%=book.title %></p>
+              <p>本画像</p>
+              <p><%=book.author %></p>
+              <p><%=Publisher.find_by(id: book.publisher_id) %></p>
+              <span><%=Genre.find_by(id: book.genre1_id) %></span>
+              <span><%=Genre.find_by(id: book.genre2_id) %></span>
+              <span><%=Genre.find_by(id: book.genre3_id) %></span>
+              <p><%=book.impression %></p>
+            <%end%>
+          </div>
+        <%end%>
+      </div>
+      <div class="browse">
+        <h2>閲覧回数が多い本（ができれば面白い）</h2>
+        <p>本タイトル</p>
+        <p>本画像</p>
+        <p>著者</p>
+        <p>出版社</p>
+        <span>ジャンル１</span><span>ジャンル２</span><span>ジャンル３</span>
+        <p>本感想</p>
+        <p>本タイトル</p>
+        <p>本画像</p>
+        <p>著者</p>
+        <p>出版社</p>
+        <span>ジャンル１</span><span>ジャンル２</span><span>ジャンル３</span>
+        <p>本感想</p>
+      </div>
     </div>
-
-    <%end%>
-    </div>
-
-    <div class="browse">
-    <h2>閲覧回数が多い本（ができれば面白い）</h2>
-
-    <p>本タイトル</p>
-    <p>本画像</p>
-    <p>著者</p>
-    <p>出版社</p>
-    <span>ジャンル１</span><span>ジャンル２</span><span>ジャンル３</span>
-    <p>本感想</p>
-
-    <p>本タイトル</p>
-    <p>本画像</p>
-    <p>著者</p>
-    <p>出版社</p>
-    <span>ジャンル１</span><span>ジャンル２</span><span>ジャンル３</span>
-    <p>本感想</p>
-    </div>
-
-</div>
-
-</article>
-
-<aside>
+  </article>
+  <aside>
     <a>アマゾン</a>
     <a>楽天Ｋｏｂｏ</a>
-
-</aside>
-
-
+  </aside>
 </div>

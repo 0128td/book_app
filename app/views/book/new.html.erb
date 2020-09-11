@@ -1,53 +1,34 @@
 <div class="book-container">
-
-    <div class="link-menu">
-        <a href="/top">トップページに戻る</a>
-    </div>
-
-    <div class="link-menu">
-        <a href="/publisher/new">出版社登録はこちら</a>
-    </div>
-
-    <div class="link-menu">
-        <a href="/genre/new">ジャンル登録はこちら</a>
-    </div>
-
-    <div class="book-contents">
-        <%=form_with url:"/book/create" do |form| %>
-
-        <p>書籍タイトル</p>
-            <input type="text" class="book-title" name="title" value="">
-
-        <p>書籍画像</p>
-            <input type="file" class="book-image" name="image" value="">
-
-        <p>著者</p>
-            <input type="text" class="book-author" name="author" value="">
-
-        <p>出版社</p>
-            <%=collection_select(:publisher_id, :id, Publisher.all, :id, :name, include_blank: true) %><br>
-
-        <p>ジャンル１</p>
-            <%=collection_select(:genre_id, :genre1_id, Genre.all, :id, :name, include_blank: true) %><br>
-
-        <p>ジャンル２</p>
-            <%=collection_select(:genre_id, :genre2_id, Genre.all, :id, :name, include_blank: true) %><br>
-
-        <p>ジャンル３</p>
-            <%=collection_select(:genre_id, :genre3_id, Genre.all, :id, :name, include_blank: true) %><br>
-
-        <p>感想</p>
-           <textarea cols="40" rows="8" class="book-impression" name="impression"></textarea>
-
-        <p>評価</p>
-            <div class="book-rate"></div>
-            
-            <input type="submit" value="登録">
-
-        <%end%>
-
-    </div>
-
-
-
+  <div class="link-menu">
+    <a href="/top">トップページに戻る</a>
+  </div>
+  <div class="link-menu">
+    <a href="/publisher/new">出版社登録はこちら</a>
+  </div>
+  <div class="link-menu">
+    <a href="/genre/new">ジャンル登録はこちら</a>
+  </div>
+  <div class="book-contents">
+    <%=form_with url:"/book/create" do |form| %>
+      <p>書籍タイトル</p>
+      <input type="text" class="book-title" name="title" value="">
+      <p>書籍画像</p>
+      <input type="file" class="book-image" name="image" value="">
+      <p>著者</p>
+      <input type="text" class="book-author" name="author" value="">
+      <p>出版社</p>
+      <%=collection_select(:publisher_id, :id, Publisher.all, :id, :name, include_blank: true) %><br>
+      <p>ジャンル１</p>
+      <%=collection_select(:genre_id, :genre1_id, Genre.all, :id, :name, include_blank: true) %><br>
+      <p>ジャンル２</p>
+      <%=collection_select(:genre_id, :genre2_id, Genre.all, :id, :name, include_blank: true) %><br>
+      <p>ジャンル３</p>
+      <%=collection_select(:genre_id, :genre3_id, Genre.all, :id, :name, include_blank: true) %><br>
+      <p>感想</p>
+      <textarea cols="40" rows="8" class="book-impression" name="impression"></textarea>
+      <p>評価</p>
+      <div class="book-rate"></div>
+      <input type="submit" value="登録">
+    <%end%>
+  </div>
 </div>

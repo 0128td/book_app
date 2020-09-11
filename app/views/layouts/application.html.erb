@@ -7,51 +7,36 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
   </head>
-
   <body>
-  <header>
-
+    <header>
       <% if flash[:notice] %>
         <div class="flash">
           <%= flash[:notice] %>
         </div>
       <% end %>
-
       <div class="header-logo">
-       <%= link_to image_tag('logo.jpg'),"/top" %>
+        <%= link_to image_tag('logo.jpg'),"/top" %>
       </div>
-      
       <div class="header-genre">
         ジャンル<span>▼</span>
       </div>
-    
       <div class="header-search">
         <input type="search" value="書籍検索"><input type="button" value="検索">
       </div>
-      
       <div class="header-summary">
         <a href="/book/new">本要約登録はこちら</a>
       </div>
-   
-  </header>
-
-  <div class="container">
-
-    <%= yield %>
-
-  </div>
-
-  <footer>
-    <div class="footer-menu">
-      <a>サイトについて</a><br>
-      <a>運営者について</a>
+    </header>
+    <div class="container">
+      <%= yield %>
     </div>
-
-    <div class="footer-logo"></div>
-  </footer>
- 
-
+    <footer>
+      <div class="footer-menu">
+        <a>サイトについて</a><br>
+        <a>運営者について</a>
+      </div>
+      <div class="footer-logo"></div>
+    </footer>
   </body>
 </html>

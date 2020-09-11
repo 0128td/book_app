@@ -1,0 +1,25 @@
+<div class="book-container">
+  <div class="link-menu">
+    <%=link_to("書籍編集に戻る","/book/#{params[:id]}/edit")%>
+  </div>
+  <p>書籍要約</p>
+  <input type="button" id="addRow" value="行追加">
+  <div class="summary-table">
+    <table id="summary-table">
+      <tr>
+        <th id="section">セクション</th>
+        <th id="summary">要約文章</th>
+        <th id="delete"></th>
+      </tr>
+      <%=form_with url:"/summary/#{params[:id]}/create" do |form| %>
+        <tr>
+          <td><input type="text" class="section" name="section" value=""></td>
+          <td><input type="text" class="summary" name="summary" value=""></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <input type="submit" value="登録">
+  <%end%>
+</div>
+</div>
